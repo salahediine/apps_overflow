@@ -19,7 +19,9 @@
 			font-size: 1.3em;
 			font-weight: bold;
 		}
-		
+		#question{
+			padding-top: 10px;
+		}
 
 	</style>
 
@@ -42,7 +44,7 @@
 
 			<div>
 				<h2>Body</h2>
-				<textarea name="body" rows="4"  id="question" placeholder="Ask your question" required>  {%if body %} {{body}} {% endif %} </textarea>
+				<textarea name="body" rows="7"  id="question" placeholder="Ask your question" required>{%if body %} {{body}} {% endif %}</textarea>
 			</div>
 			
 
