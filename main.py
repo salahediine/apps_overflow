@@ -12,10 +12,10 @@ from flask import Flask, render_template, request
 from bs4 import BeautifulSoup
 import spacy
 
-model_vectorizer = pickle.load(open('vectorizer.pkl', 'rb'))
-model_classifier = pickle.load(open('classifier_chain_rfc.pkl', 'rb'))
-mlb = pickle.load(open('multilabel_binarizer.pkl', 'rb'))
-pca = pickle.load(open('pca.pkl', 'rb'))
+model_vectorizer = pickle.load(open('pkl/vectorizer.pkl', 'rb'))
+model_classifier = pickle.load(open('pkl/classifier_chain_rfc.pkl', 'rb'))
+mlb = pickle.load(open('pkl/multilabel_binarizer.pkl', 'rb'))
+pca = pickle.load(open('pkl/pca.pkl', 'rb'))
 
 
 app = Flask(__name__, template_folder='templates', static_folder='templates/static')
