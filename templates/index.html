@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<link rel="stylesheet" type="text/css" href="static/css/main.css">
+</head>
+<body>
+	<style>
+		#result span{
+			border: 1px solid #b6b6b6;
+			padding: 5px 10px;
+			border-radius: 5px;
+			background-color: rgb(184, 184, 184);
+			box-shadow: 1px 1px 2px #444;
+			margin-right: 10px;
+			font-size: 1.3em;
+			font-weight: bold;
+		}
+		
+
+	</style>
+
+	<div id="main-form">
+
+		<div id="logo">
+			<img src="https://upload.wikimedia.org/wikipedia/commons/f/f7/Stack_Overflow_logo.png" alt="">
+		</div>
+
+		<form action="{{ url_for('predict')}}" method="POST">
+
+			<h1>Ask a public question</h1>
+		
+			<div>
+				<h2>Title</h2>
+				<input type="text" name="title" id="title" value="{%if title %} {{title}} {% endif %}"  autocomplete="off"  placeholder="title" required>
+			</div>
+
+			
+
+			<div>
+				<h2>Body</h2>
+				<textarea name="body" rows="4"  id="question" placeholder="Ask your question" required>  {%if body %} {{body}} {% endif %} </textarea>
+			</div>
+			
+
+			<div id="valider">
+				<input type="submit" id="submit" class="btn-info" value="Suggest tags">
+			</div>
+
+			<div id="result">
+				{%if prediction_text %}
+					<h2>tags suggested:</h2>
+				{% endif %}
+				
+					 {% for i in prediction_text %}
+					 	{% for j in i %}
+							<span>{{ j }}</span>
+						{% endfor %}
+					{% endfor %}
+			</div>
+		
+		</form>
+
+		
+		
+	</div>
+
+	
+	
+
+</body>
+</html>

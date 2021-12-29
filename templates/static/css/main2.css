@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+html{
+    font-family: 'Montserrat', sans-serif;
+    padding: 0;
+    margin: 0;
+    background-color: #ebebeb;
+}
+
+h2 {
+    font-size: 1.3em;
+}
+h1{
+    
+    margin-bottom: 70px;
+}
+
+#logo{
+    text-align: center;
+}
+
+img{
+    width: 500px;
+}
+
+
+
+#title,#question{
+    width: 100%;
+    padding: 10px 10px 10px 5px;
+    outline: none;
+    background-color: #ebebeb;
+    
+}
+
+#title{
+    border: none;
+    
+    border-bottom: 1px solid #696969;
+    transition: 0.2s padding;
+}
+#question{
+    padding-bottom: 150px;
+}
+
+#title:focus{
+    padding: 10px 10px 10px 0px;
+}
+
+#submit{
+    cursor: pointer;
+    margin-top: 10px;
+    color: white;
+    /* float: right; */
+    padding: 10px 20px;
+    background: #217aed;
+    border: none;
+    transition: 0.2s all; 
+}
+#submit:hover{
+    background: #498ee6;
+    color: white;
+    /* border: 1px solid transparent; */
+}
+
+::placeholder {
+    font-family: 'Montserrat', sans-serif;
+    color: #444;
+}
+
+
+form{
+    margin: auto;
+    /* border: 1px solid #696969; */
+    width: 40%;
+    padding: 50px;
+    margin-top: 100px;
+    border-radius: 5px;
+    box-shadow: 2px 2px 8px #696969;
+}
+
+
+#result span{
+    border: 1px solid #b6b6b6;
+    padding: 5px 10px;
+    border-radius: 5px;
+    background-color: rgb(184, 184, 184);
+    box-shadow: 1px 1px 2px #444;
+    margin-right: 10px;
+    font-size: 1.3em;
+    font-weight: bold;
+}
