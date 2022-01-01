@@ -19,11 +19,8 @@ catalogue==1.0.0
 certifi==2021.5.30
 click==7.1.2
 Cython==0.29.21
-deep-translator==1.4.4
 docopt==0.6.2
 entrypoints==0.3
-fastapi==0.65.2
-flasgger==0.9.5
 Flask==2.0.1
 flask-apispec==0.11.0
 Flask-RESTful==0.3.9
@@ -36,7 +33,6 @@ gunicorn==20.1.0
 h11==0.12.0
 ipywidgets==7.6.3
 itsdangerous==2.0.1
-joblib==1.0.1
 jsonschema==3.0.2
 langdetect==1.0.9
 lxml==4.6.3
@@ -63,8 +59,6 @@ scipy==1.6.2
 smart-open==5.1.0
 smmap==4.0.0
 soupsieve==2.2.1
-starlette==0.14.2
-streamlit==0.84.0
 sumy==0.8.1
 terminado==0.10.1
 toolz==0.11.1
